@@ -1,0 +1,48 @@
+body {
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.subject-card {
+    transition: transform 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 200px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .subject-card {
+        margin-bottom: 10px;
+    }
+}

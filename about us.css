@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #007bff, #6a11cb);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.about-section {
+    padding: 60px 0;
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+.about-content {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+
+.card {
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.22s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 10px;
+    }
+}
+
+/* Additional Animations */
+.animate__animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
